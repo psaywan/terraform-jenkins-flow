@@ -1,0 +1,62 @@
+{
+  "module": {
+    "tenant_tn-4290dw-prius22": [
+      {
+        "project": "${var.project}",
+        "source": "git@github.com:xyz/xyz-xyz?ref=v1",
+        "account": "${var.account}",
+        "kms_admin_roles_list": "${var.kms_admin_roles_list}",
+        "tenant_config": {},
+        "fallback_config": "${var.fallback_config}",
+        "kms_admin_users_list": "${var.kms_admin_users_list}",
+        "tenant": "${lookup(local.tenants, \"missing-org-2\", \"\")}"
+      }
+    ],
+    "tenant_tn-4290dw-prisum98": [
+      {
+        "tenant_config": {},
+        "account": "${var.account}",
+        "fallback_config": "${var.fallback_config}",
+        "project": "${var.project}",
+        "source": "git@github.com:xyz/xyz-xyz?ref=v1",
+        "kms_admin_roles_list": "${var.kms_admin_roles_list}",
+        "kms_admin_users_list": "${var.kms_admin_users_list}",
+        "tenant": "${lookup(local.tenants, \"missing-org-2\", \"\")}"
+      }
+    ],
+  },
+  "locals": [
+    {
+      "tenants_config_list": [
+        "${module.tenant_tn-4290dw-783ng38.config}",
+        "${module.tenant_tn-4290dw-783ng38.config}",
+        "${module.tenant_tn-4290dw-783ng38.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb838.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb838.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb838.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb838.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb838.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb839.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb839.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb83dwd9.config}",
+        "${module.tenant_tn-4290dw-783ng3heiud2387xb83dwd88888.config}",
+        "${module.tenant_tn-4290dw-77778888.config}",
+        "${module.tenant_tn-4290dw-77778888.config}",
+        "${module.tenant_tn-4290dw-77778888.config}",
+        "${module.tenant_tn-4290dw-diego98.config}",
+        "${module.tenant_tn-4290dw-prisum98.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}",
+        "${module.tenant_tn-4290dw-prius22.config}"
+      ]
+    }
+  ]
+}
